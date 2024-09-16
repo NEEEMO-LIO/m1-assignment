@@ -1,0 +1,191 @@
+
+    /*ALL PAGES*/
+/* body */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+
+
+/* header */
+header{
+    text-align: center;
+    margin-top: -20px;
+    height: 350px;
+    width:100%;
+    background-image: url(images/pet_adoption_6.jpg);
+    background-size: cover;
+}
+
+.cover{
+    height: 320px;
+    background-color: rgba(8, 8, 7, 0.7);
+    width: 100%;
+}
+
+.menu{
+    width:100%;
+    height:30px;
+    background-color: rgb(75, 96, 111);
+    /* background-color: #B0BBBF; */
+    margin-top: -20px;
+}
+
+.menu ul a{
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul a:link{
+    color:white;
+}
+
+.menu ul a:visited{
+    color:white;
+}
+
+.menu ul a:hover{
+    color:rgb(19, 41, 94);
+}
+
+
+header h1{
+    color: #c8c8c8;
+    font-size: 100px;
+    line-height: 0%;
+    z-index: 10;
+    float:top;
+    position: relative;
+    top:-180px;
+}
+
+/* main_gallery*/
+#gallery main{
+    height: 700px;
+    background-color: #c3bbab;
+
+}
+#gallery table{
+    width:950px;
+    padding-top: 80px;
+    margin:0 auto;
+    
+}
+
+#gallery td{
+    /* width: 200px; */
+    height:200px;
+    border: solid 0px;
+}
+td[class="cat"]{
+    background-image: url(images/cat1.jpeg);
+    background-size: 200px;
+    border-radius:50%;
+    width:200px;
+}
+td[class="dog"]{
+    background-image: url(images/dog1.jpg);
+    background-size: cover;
+    border-radius:50%;
+    width:200px;
+}
+div[class="info"]{
+    text-align: center;
+    color: rgba(0, 106, 144,0);
+    font-weight: bold;
+}
+div[class="info"]:hover{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(86, 84, 75,0.8);
+    border-radius:50%;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+th[class="space"]{
+    width:50px;
+}
+td[class="space"]{
+    width:50px;
+}
+
+
+
+
+/*main_home*/
+#about main{
+    background-color: #c3bbab;
+    background-size:1100px no-repeat;
+    margin-top: -20px;
+    height:450px;
+}
+
+#about main p{
+    line-height: 2;
+    text-indent: 2em;
+    padding-top:100px;
+    padding-left:150px;
+    padding-right:150px;
+}
+
+
+/* main_contact*/
+#contact main{
+    background-color: #c3bbab;
+    margin-top: -30px;
+    height:1200px;
+}
+
+#contact main p{
+    padding-top: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+fieldset{
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 1.2;
+    border-color: rgb(134, 162, 183);
+    background-image: url(images/pet_adoption_1.jpg);
+    background-size: 1260px;
+}
+
+legend{
+    font-weight: bold;
+    color:rgb(25, 74, 109);
+    font-size: 22px;
+}
+label{
+    font-weight: bold;
+}
+div.button{
+    padding-left: 522px;
+}
+
+
+/*footer*/
+footer{
+    background-color:#969383;
+    margin-top: -20px;
+    font-size: 12px;
+    height: 100px;
+    
+} 
+
+footer p{
+    padding-top: 20px;
+    line-height: 2;
+    justify-items: center;
+}
+
+
