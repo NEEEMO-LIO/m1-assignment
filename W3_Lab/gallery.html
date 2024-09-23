@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html   lang="en">                          <!--language-->            
+<head>                                               
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"href="style.css">
+    <title>LA Pet Adoption</title>       
+</head>
+
+<body>
+<header>
+    <nav class="cover"></nav>
+    <nav class="menu">                                       
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+    </nav>  
+    <h1>LA Pet Adoption</h1>
+</header>
+
+<main id="gal">
+    <div class="gallery img-cap img-des" id="image-gallery">   
+    </div>     
+</main>
+
+<footer>                                   
+    <p>&copy; Copyright 2024
+        <br>
+        <strong> Created by NEEEMO-LIO</strong>
+    </p>
+</footer>    
+
+<script>
+    var images = [
+        { src: "images/cat1.jpeg", caption: "Kitty No.1", description: "Age weights Pet breed vaccinated" },
+        { src: "images/cat1.jpeg", caption: "Kitty No.2", description: "Age weights Pet breed vaccinated" },
+        { src: "images/cat1.jpeg", caption: "Kitty No.3", description: "Age weights Pet breed vaccinated" },
+        { src: "images/cat1.jpeg", caption: "Kitty No.4", description: "Age weights Pet breed vaccinated" },
+        { src: "images/cat1.jpeg", caption: "Kitty No.5", description: "Age weights Pet breed vaccinated" },
+        { src: "images/dog1.jpg", caption: "Puppy No.1", description: "Age weights Pet breed vaccinated" },
+        { src: "images/dog1.jpg", caption: "Puppy No.2", description: "Age weights Pet breed vaccinated" },
+        { src: "images/dog1.jpg", caption: "Puppy No.3", description: "Age weights Pet breed vaccinated" },
+        { src: "images/dog1.jpg", caption: "Puppy No.4", description: "Age weights Pet breed vaccinated" },
+        { src: "images/dog1.jpg", caption: "Puppy No.5", description: "Age weights Pet breed vaccinated" }
+    ];
+
+    var gallery = document.getElementById("image-gallery");
+
+    for (let i = 0; i < images.length; i++) {
+        var galleryItem = document.createElement("div");
+        galleryItem.className = "gallery-item"; 
+        
+        var img = document.createElement("img");
+        img.src = images[i].src; 
+        
+        //caption
+        var openCaptionTag = document.createElement("div");
+        openCaptionTag.className = "caption"; // use class="img-cap"
+        openCaptionTag.innerText = images[i].caption; // setting caption text
+
+        // add description
+        var openDescTag = document.createElement("div");
+        openDescTag.className = "description"; // use class="img-des" 
+        openDescTag.innerText = images[i].description; // setting description text
+
+        // add everything into galleryItem
+        galleryItem.appendChild(img);
+        galleryItem.appendChild(openCaptionTag); 
+        galleryItem.appendChild(openDescTag);    
+        
+        gallery.appendChild(galleryItem); // add <div> into gallery
+    }
+</script>
+   
+
+
+
+</body>
+
+</html>
