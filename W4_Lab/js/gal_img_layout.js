@@ -37,13 +37,12 @@ for (let i = 0; i < images.length; i++) {
 
     //float info window by click
     openDescTag.onclick = function() {
-        infoCaption.innerText = images[i].caption; // 设置信息框的标题
-        infoDescription.innerText = images[i].description; // 设置信息框的描述
+        infoCaption.innerText = images[i].caption; 
+        infoDescription.innerText = images[i].description; 
         infoBox.style.display = "block"; 
     }
 
-
-
+   
 
     // add everything into galleryItem
     galleryItem.appendChild(img);

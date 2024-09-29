@@ -120,6 +120,9 @@ main,#gal {
 }
 
 .info-box {
+    display: flex;
+    flex-direction: column; /* 垂直排列子元素 */
+    justify-content: flex-start;
     position: absolute; 
     top: 140%; 
     left: 50%; 
@@ -139,6 +142,8 @@ main,#gal {
     color:white;
 }
 
+
+
 .info-box p {
     color:white;
     font-size: 14px;
@@ -152,8 +157,7 @@ main,#gal {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 0;
     font-size: 14px;
-    
-    margin-top: 10px; 
+    text-decoration: underline;
     margin: 0 auto;
 }
 
