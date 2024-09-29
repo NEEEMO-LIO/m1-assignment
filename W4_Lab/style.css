@@ -121,7 +121,7 @@ main,#gal {
 
 .info-box {
     display: flex;
-    flex-direction: column; /* 垂直排列子元素 */
+    flex-direction: column; 
     justify-content: flex-start;
     position: absolute; 
     top: 140%; 
@@ -130,9 +130,9 @@ main,#gal {
     background-color: rgba(0, 0, 0, 0.9); 
     border-radius: 10px; 
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影以增加深度 */
-    z-index: 100; /* 确保它在其他元素之上 */
-    display: none; /* 默认隐藏 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 100; 
+    display: none; 
     height:300px;
     width:30%;
 }
@@ -166,7 +166,7 @@ main,#gal {
     background-color: #c3bbab;
     background-size:1100px no-repeat;
     margin-top: -20px;
-    height:450px;
+    height:500px;
 }
 
 #about main p{
@@ -183,14 +183,18 @@ main,#gal {
 #contact main{
     background-color: #c3bbab;
     margin-top: -23px;
-    height:1200px;
+    height:1100px;
 }
 
 #contact main p{
     padding-top: 70px;
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
     font-size: 28px;
+}
+
+#form{
+    text-align: left;
 }
 
 fieldset{
@@ -198,8 +202,8 @@ fieldset{
     margin-right: 150px;
     line-height: 1.2;
     border-color: rgb(134, 162, 183);
-    background-image: url(images/pet_adoption_1.jpg);
-    background-size: 1260px;
+    background-image: url(images/pet_adoption_1_1.jpg);
+    background-size: 102%;
 }
 
 legend{
@@ -211,7 +215,7 @@ label{
     font-weight: bold;
 }
 div.button{
-    padding-left: 522px;
+    padding-left: 427px;
 }
 
 
