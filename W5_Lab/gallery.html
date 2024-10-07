@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en">                          <!--language-->            
+<head>                                               
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>LA Pet Adoption</title>       
+</head>
+
+<body>
+<header>
+    <nav class="cover"></nav>
+    <nav class="menu">                                       
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+    </nav>  
+    <h1>LA Pet Adoption</h1>
+</header>
+
+<main id="gal">
+    <div class="galTitle">
+        <h3>We are waiting for you to give us homes and names!</h3>
+    </div>
+    
+    <!-- images layout -->
+    <div class="gallery img-cap img-des" id="image-gallery"></div>
+    
+    <!-- float info window -->
+    <div id="infoBox" class="info-box" style="display: none;">
+        <h4 id="infoCaption"></h4>
+        <p id="infoDescription">Age weights Pet breed vaccinated</p>
+        <button id="closeInfo">Click This To Close</button>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" style="display: none;">
+        <span id="closeLightbox">&times;</span>
+        <img id="lightboxImage" src="" alt="">
+    </div>
+
+</main>
+
+<footer>                                   
+    <p>&copy; Copyright 2024
+        <br>
+        <strong> Created by NEEEMO-LIO</strong>
+    </p>
+</footer>    
+
+<!-- jQuery Library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--Gallery Images Layout-->
+<script src="js/gal_img_layout.js"></script>
+
+</body>
+
+</html>

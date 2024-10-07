@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html   lang="en">                          <!--language-->            
+<head>                                     
+    <html lang="en">                          <!--language-->            
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"href="style.css">
+    <title>LA Pet Adoption</title>          <!--web tage name-->
+</head>
+
+
+<body>
+<header>
+    <nav class="cover"></nav>
+    <nav class="menu">                                       
+        <ul>
+            <a href="index.html">Home</a>
+            <!-- <a href="index.html">About</a> -->
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+    </nav>  
+    <h1>LA Pet Adoption</h1>
+
+</header>
+
+
+<div id="contact">                        <!--container to wrap everything-->
+    <main>                                      <!--main content-->
+        
+        <p>Let us know if you want to give them a warm home!</p><br>
+
+        <form action="/signup" method="post" id="form">
+            <fieldset>
+                <legend>Apply for adoption</legend><br>
+                <label>First Name</label><br>
+                    <input type="text" name="name"><br>
+                <label>Last Name</label><br>
+                    <input type="text" name="name"><br>
+                <label>Email</label><br>
+                    <input type="email" name="email"><br>
+                <label>Phone</label><br>
+                    <input type="text" name="phone"><br>
+                <br><label> Select your Property Type</label><br>
+                    <input type="radio" name="Property Type" value="Rent"/>Rent 
+                    <input type="radio" name="Property Type" value="Own"/>Own <br>
+                <br><label>What type of residence you have?</label><br>
+                    <select>
+                        <option>Apartment</option>
+                        <option>Townhouse</option>
+                        option>House</option>
+                    </select><br>
+
+                <br><div class="radiosHave">
+                    <label>Do you have any pets now? (Only cats or dogs account.)</label><br>
+                        <select id="have">
+                            <option>No</option>
+                            <option value="1">Yes</option>
+                        </select><br>
+                    <br><div id="yes" style="display: none;">
+                    <label>If yes, how many pets do you have currently?</label><br>
+                        <input type="number"><br>
+                    </div>
+                </div>
+
+                <br><div class="radios">
+                    <label>What kind of pet you want to adopt from us?</label>
+                    <select id="petTyp">
+                        <option value="">--Select--</option>
+                        <option value="1">Cat</option>
+                        <option value="2">Dog</option>
+                    </select>
+                       
+                    <div id="cat" style="display: none;">
+                        <label>Tell us which kitty?</label>
+                        <select id="cat">
+                            <option value="">--Select--</option>
+                            <option value="1">Kitty No.1</option>
+                            <option value="2">Kitty No.2</option>
+                            <option value="3">Kitty No.3</option>
+                            <option value="4">Kitty No.4</option>
+                            <option value="5">Kitty No.5</option>
+                        </select>
+                        <br><label id="reminder">We only allow our customers to adopt ONE pet at a time.</label>
+                    </div>
+                    <div id="dog" style="display: none;">
+                        <label>Tell us which puppy?</label>
+                        <select id="dog">
+                            <option value="">--Select--</option>
+                            <option value="1">Puppy No.1</option>
+                            <option value="2">Puppy No.2</option>
+                            <option value="3">Puppy No.3</option>
+                            <option value="4">Puppy No.4</option>
+                            <option value="5">Puppy No.5</option>
+                        </select>
+                        <br><label id="reminder">We only allow our customers to adopt ONE pet at a time.</label>
+                    </div>
+                </div>
+                
+                <br><label>Tell us your concern and questions: (Optional)</label><br>
+                <textarea rows="10" cols="50"></textarea><br>
+
+
+                <div class="button">
+                    <input type="submit" value="Submit!">
+                </div> 
+                
+
+
+
+            </fieldset>
+        </form>
+
+       
+    </main>                                     <!--end main content-->
+
+
+</div>                                      <!--end container-->
+
+<footer>                                   
+    <p>&copy; Copyright 2024
+        <br>
+        <strong> Created by NEEEMO-LIO</strong>
+    </p>
+</footer>    
+
+<script src="js/dropdown_CatDog.js"></script>
+
+
+
+
+</body>
+
+</html>
