@@ -183,7 +183,7 @@ main,#gal {
 #contact main{
     background-color: #c3bbab;
     margin-top: -23px;
-    height:1100px;
+    height:1200px;
 }
 
 #contact main p{
@@ -202,14 +202,17 @@ fieldset{
     margin-right: 150px;
     line-height: 1.2;
     border-color: rgb(134, 162, 183);
-    background-image: url(images/pet_adoption_1_1.jpg);
-    background-size: 102%;
+    /* background-image: url(images/pet_adoption_1_1.jpg); */
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('images/pet_adoption_1_1.jpg');
+    background-size: 108%;
+    font-size: 18px;
 }
 
 legend{
     font-weight: bold;
     color:rgb(25, 74, 109);
-    font-size: 22px;
+    font-size: 20px;
 }
 label{
     font-weight: bold;
@@ -218,6 +221,16 @@ div.button{
     padding-left: 427px;
 }
 
+#cat, #dog{
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+#reminder{
+    font-size: 14px;
+    font-style: italic;
+    color:rgb(0, 91, 195)
+}
 
 /*footer*/
 footer{

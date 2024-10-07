@@ -49,21 +49,59 @@
                         <option>Townhouse</option>
                         option>House</option>
                     </select><br>
-                <br><label>Do you have pets now?</label><br>
-                    <select>
-                        <option>No, I never have any pets.</option>
-                        <option>No, but had pets before.</option>
-                        <option>Yes.</option>
-                    </select><br>
-                <br><label>If yes, how many pets do you have currently?</label><br>
-                    <input type="text" name="name"><br>
+
+                <br><div class="radiosHave">
+                    <label>Do you have any pets now? (Only cats or dogs account.)</label><br>
+                        <select id="have">
+                            <option>No</option>
+                            <option value="1">Yes</option>
+                        </select><br>
+                    <br><div id="yes" style="display: none;">
+                    <label>If yes, how many pets do you have currently?</label><br>
+                        <input type="number"><br>
+                    </div>
+                </div>
+
+                <br><div class="radios">
+                    <label>What kind of pet you want to adopt from us?</label>
+                    <select id="petTyp">
+                        <option value="">--Select--</option>
+                        <option value="1">Cat</option>
+                        <option value="2">Dog</option>
+                    </select>
+                       
+                    <div id="cat" style="display: none;">
+                        <label>Tell us which kitty?</label>
+                        <select id="cat">
+                            <option value="">--Select--</option>
+                            <option value="1">Kitty No.1</option>
+                            <option value="2">Kitty No.2</option>
+                            <option value="3">Kitty No.3</option>
+                            <option value="4">Kitty No.4</option>
+                            <option value="5">Kitty No.5</option>
+                        </select>
+                        <br><label id="reminder">We only allow our customers to adopt ONE pet at a time.</label>
+                    </div>
+                    <div id="dog" style="display: none;">
+                        <label>Tell us which puppy?</label>
+                        <select id="dog">
+                            <option value="">--Select--</option>
+                            <option value="1">Puppy No.1</option>
+                            <option value="2">Puppy No.2</option>
+                            <option value="3">Puppy No.3</option>
+                            <option value="4">Puppy No.4</option>
+                            <option value="5">Puppy No.5</option>
+                        </select>
+                        <br><label id="reminder">We only allow our customers to adopt ONE pet at a time.</label>
+                    </div>
+                </div>
                 
-                <br><label>Tell us your concern and questions:</label><br>
+                <br><label>Tell us your concern and questions: (Optional)</label><br>
                 <textarea rows="10" cols="50"></textarea><br>
 
 
                 <div class="button">
-                    <input type="submit" value="Tell Us!">
+                    <input type="submit" value="Submit!">
                 </div> 
                 
 
@@ -84,6 +122,11 @@
         <strong> Created by NEEEMO-LIO</strong>
     </p>
 </footer>    
+
+<script src="js/dropdown_CatDog.js"></script>
+
+
+
 
 </body>
 
